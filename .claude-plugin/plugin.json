@@ -1,5 +1,5 @@
 {
-  "name": "beta-claude-kit",
+  "name": "beta-kit",
   "description": "Ticket-to-PR workflow for team Beta's Android devs: ticket, implement, self-check, pr",
   "author": {
     "name": "Team Beta"

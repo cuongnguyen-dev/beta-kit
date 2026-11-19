@@ -13,7 +13,7 @@
 - <team vocabulary: what the team calls each screen and feature>
 
 ## Workflow
-- `/beta-claude-kit:ticket <key>` → `/beta-claude-kit:implement <task>` → `/beta-claude-kit:self-check` → `/beta-claude-kit:pr`. Plans live in `plans/`.
+- `/beta-kit:ticket <key>` → `/beta-kit:implement <task>` → `/beta-kit:self-check` → `/beta-kit:pr`. Plans live in `plans/`.
 - Verify your own work, including on a device connected over adb. Ask the Dev only for what you cannot do, and say why.
 - Never delete or disable a failing test. Never change signing config. Never add a library that is not in the plan.
 

@@ -6,7 +6,7 @@
   },
   "plugins": [
     {
-      "name": "beta-claude-kit",
+      "name": "beta-kit",
       "source": "./",
       "description": "Ticket-to-PR workflow: ticket, implement, self-check, pr"
     }

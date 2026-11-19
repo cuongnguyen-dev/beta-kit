@@ -8,7 +8,7 @@
     }
   },
   "enabledPlugins": {
-    "beta-claude-kit@beta-claude-kit": true
+    "beta-kit@beta-claude-kit": true
   },
   "permissions": {
     "deny": [
