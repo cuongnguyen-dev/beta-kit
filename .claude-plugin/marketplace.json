@@ -1,0 +1,14 @@
+{
+  "name": "beta-claude-kit",
+  "description": "Team Beta's Claude Code workflow kit",
+  "owner": {
+    "name": "Team Beta"
+  },
+  "plugins": [
+    {
+      "name": "beta-claude-kit",
+      "source": "./",
+      "description": "Ticket-to-PR workflow: ticket, implement, self-check, pr"
+    }
+  ]
+}

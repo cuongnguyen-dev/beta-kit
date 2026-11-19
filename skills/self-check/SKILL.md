@@ -48,7 +48,7 @@ Secrets: <...>
 Needs the Dev: <what — why I could not do it myself>
 ```
 
-Save the report to `plans/<KEY>-self-check.md`, replacing the previous one (no ticket key: use the branch name). It is git-ignored; `/pr` and the next run read it.
+Save the report to `plans/<KEY>-self-check.md`, replacing the previous one (no ticket key: use the branch name). It is git-ignored; `/beta-claude-kit:pr` and the next run read it.
 
 ## 4. When to stop
 

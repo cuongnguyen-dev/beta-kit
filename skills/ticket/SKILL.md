@@ -40,4 +40,4 @@ Ask only what blocks the work. One decision per question, with 2–3 options and
 2. Map every AC to at least one task and one check. Constraint words such as "complete", "all", "no remaining" need a count or a comparison against the source of truth.
 3. An AC about behaviour the user sees is checked on a device by default; skipping that needs a reason written in the plan.
 4. Each task is at most half a day and has a done condition. Do not plan UI work from a guess: a task whose design or other input is still missing is marked blocked, with what it is waiting for.
-5. When the Dev approves, write the plan to `plans/<KEY>-<short-name>.md` (if still in plan mode, ask the Dev to exit it), then tell the Dev to run `/implement`.
+5. When the Dev approves, write the plan to `plans/<KEY>-<short-name>.md` (if still in plan mode, ask the Dev to exit it), then tell the Dev to run `/beta-claude-kit:implement`.
