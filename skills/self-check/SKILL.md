@@ -18,13 +18,13 @@ Plan: $ARGUMENTS (if empty, find the plan in `plans/` whose name starts with the
 
 ## 2. Checks
 
-1. **Code ticket:** run lint, build and the full unit test suite from `CLAUDE.md`, each as its own command, reading results and baselines as the implement skill says.
+1. **Code ticket:** run lint, build and the full unit test suite from `CLAUDE.md`, each as its own command, reading results and baselines as "Verify it yourself" in the [implement skill](../implement/SKILL.md) says (read that file first if it is not already in this session).
 2. **Independent review by subagent** (fresh context; give it only the plan path and read access to the repo, none of your notes):
    - Code ticket: which deliverables and AC are missing from the diff; changes outside the plan; logic errors.
    - Documentation ticket: statements that are wrong or broader than the code supports; contradictions between files; behaviour claims without a label (device / code / not verified). Re-check `file:line` references and re-run searches for the statements the reader will rely on; not every line.
    - Do not change the working tree, including temporary test code, while a subagent is reviewing.
    - Do not dismiss a subagent finding; report it as is. If you re-checked and the subagent is wrong, put your evidence next to it and let the Dev decide.
-3. **Device:** `adb devices`. If a device is connected, install the debug build and run every scenario in the plan's checks plus every "not verified" item that can be run; save screenshots to `plans/screenshots/`. Follow the device rules in the implement skill.
+3. **Device:** `adb devices`. If a device is connected, install the debug build and run every scenario in the plan's checks plus every "not verified" item that can be run; save screenshots to `plans/screenshots/`. Follow the device rules in the [implement skill](../implement/SKILL.md).
 4. **Secrets:** search the diff for keys, tokens, passwords and user data.
 
 ## 3. Report
