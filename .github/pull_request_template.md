@@ -12,5 +12,5 @@
 - [ ] One problem in this pull request
 - [ ] Edited an existing sentence where possible, instead of adding one
 - [ ] `claude plugin validate .` passes
-- [ ] `SETUP.md`, `README.md` and `templates/` updated if a command, file name or permission rule changed
+- [ ] `README.md` and `templates/` updated if a command, file name or permission rule changed
 - [ ] App repos need to do something after this merges: <!-- no / what -->

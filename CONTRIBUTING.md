@@ -4,7 +4,7 @@ Skills improve from real tickets. When a skill let Claude do the wrong thing, fi
 
 ## What belongs in the kit
 
-Use the list from "After each ticket" in [SETUP.md](SETUP.md):
+Use the list from "After each ticket" in [README.md](README.md):
 
 | The problem is | Where the fix goes |
 | --- | --- |
@@ -39,7 +39,7 @@ Use the list from "After each ticket" in [SETUP.md](SETUP.md):
 - Say what happened: the ticket, what the skill told Claude, what Claude did instead.
 - Change an existing sentence before adding a new one. Add a sentence only when it would have prevented a failure that really happened; skills that grow stop being followed.
 - Keep project names, class names and ticket-specific detail out of skills.
-- If the change renames a command, a file the skills write, or a permission rule, update `SETUP.md`, `README.md` and `templates/` in the same pull request.
+- If the change renames a command, a file the skills write, or a permission rule, update `README.md` and `templates/` in the same pull request.
 
 ## Review and release
 
