@@ -11,6 +11,8 @@ Team Beta's workflow kit for Claude Code: four skills that take an Android ticke
 
 A fifth skill, `/beta-kit:feedback`, sends a fix for the kit itself back as a pull request.
 
+Overview of the flow (video, 53 seconds, in Vietnamese): [docs/flow-tong-quan.mp4](docs/flow-tong-quan.mp4).
+
 Typing `/ticket` is enough for Claude Code to suggest the full name.
 
 ## Install the plugin (once per machine)
