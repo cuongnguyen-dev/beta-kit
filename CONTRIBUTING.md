@@ -14,13 +14,15 @@ Use the list from "After each ticket" in [README.md](README.md):
 
 ## Make the change
 
-1. Clone the repo and create a branch. Do not push to `master`.
+1. Fork the repo on GitHub (the "Fork" button on [cuongnguyen-dev/beta-kit](https://github.com/cuongnguyen-dev/beta-kit)), clone your fork and create a branch. Only the kit owner can write to this repo; every change reaches `master` through a pull request.
 
    ```bash
-   git clone git@github.com:cuongnguyen-dev/beta-kit.git
+   git clone git@github.com:<your-username>/beta-kit.git
    cd beta-kit
    git switch -c fix/self-check-skips-device
    ```
+
+   If your fork is older than `master` here, press "Sync fork" on its GitHub page before you branch.
 
 2. Edit the skill under `skills/<name>/SKILL.md` (or its template next to it).
 3. Try it on a real ticket. From the app repo, start Claude Code with your clone instead of the installed plugin:
@@ -31,7 +33,7 @@ Use the list from "After each ticket" in [README.md](README.md):
 
    After further edits, run `/reload-plugins` in that session.
 4. Check the plugin still loads: `claude plugin validate /path/to/beta-kit`.
-5. Push the branch and open a pull request. Fill in the template.
+5. Push the branch to your fork and open a pull request against `master` of `cuongnguyen-dev/beta-kit`. Fill in the template.
 
 ## Rules for a skill change
 
