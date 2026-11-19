@@ -14,6 +14,8 @@ Use the list from "After each ticket" in [README.md](README.md):
 
 ## Make the change
 
+The short way: run `/beta-kit:feedback` in the app repo where the problem happened. Claude forks and clones the kit, makes the edit, writes the pull request description and prints the command that pushes and opens it. The steps below do the same by hand.
+
 1. Fork the repo on GitHub (the "Fork" button on [cuongnguyen-dev/beta-kit](https://github.com/cuongnguyen-dev/beta-kit)), clone your fork and create a branch. Only the kit owner can write to this repo; every change reaches `master` through a pull request.
 
    ```bash

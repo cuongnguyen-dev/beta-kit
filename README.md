@@ -9,6 +9,8 @@ Team Beta's workflow kit for Claude Code: four skills that take an Android ticke
 | 4 | `/beta-kit:self-check` | Checks the whole ticket: tests, independent review, device, each acceptance criterion |
 | 5 | `/beta-kit:pr` | Writes the PR description from the plan and the self-check report |
 
+A fifth skill, `/beta-kit:feedback`, sends a fix for the kit itself back as a pull request.
+
 Typing `/ticket` is enough for Claude Code to suggest the full name.
 
 ## Install the plugin (once per machine)
@@ -18,7 +20,7 @@ claude plugin marketplace add cuongnguyen-dev/beta-kit
 claude plugin install beta-kit@beta-kit
 ```
 
-Restart Claude Code. Typing `/` should list `beta-kit:ticket`, `implement`, `self-check` and `pr`.
+Restart Claude Code. Typing `/` should list `beta-kit:ticket`, `implement`, `self-check`, `pr` and `feedback`.
 
 ## Connect Jira and Figma (once per machine)
 
@@ -49,7 +51,9 @@ Restart Claude Code. Typing `/` should list `beta-kit:ticket`, `implement`, `sel
 
 ## After each ticket
 
-Before clearing the session, ask Claude to list what went wrong or had to be redone, sorted into three groups: true for every project (change a skill), true for this project only (add to "Lessons" in `CLAUDE.md`), happened once (drop). Review the list before anything is edited. Items in the first group go to the kit as a pull request: see [CONTRIBUTING.md](CONTRIBUTING.md).
+Before clearing the session, run `/beta-kit:feedback`. Claude lists what went wrong or had to be redone, sorted into three groups: true for every project (change a skill), true for this project only (add to "Lessons" in `CLAUDE.md`), happened once (drop). Review the list before anything is edited.
+
+For an item in the first group, Claude prepares the fix in your fork of the kit (cloned to `~/.beta-kit-fork`, needs the `gh` CLI) and prints one command; you run it to push and open the pull request. The kit repo is public: read the description before you send it. To send one specific problem at any time: `/beta-kit:feedback <what went wrong>`.
 
 ## Update
 
@@ -62,4 +66,4 @@ Or turn on auto-update: `/plugin` → Marketplaces → beta-kit. Every commit on
 
 ## Improve the kit
 
-Found something a skill gets wrong on every project? Open a pull request: see [CONTRIBUTING.md](CONTRIBUTING.md).
+Found something a skill gets wrong on every project? Run `/beta-kit:feedback` from the app repo, or make the change by hand: see [CONTRIBUTING.md](CONTRIBUTING.md).
