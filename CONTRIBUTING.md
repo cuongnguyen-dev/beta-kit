@@ -1,4 +1,4 @@
-# Contributing to beta-claude-kit
+# Contributing to beta-kit
 
 Skills improve from real tickets. When a skill let Claude do the wrong thing, fix the skill so the next ticket does not hit it again.
 
@@ -17,8 +17,8 @@ Use the list from "After each ticket" in [README.md](README.md):
 1. Clone the repo and create a branch. Do not push to `master`.
 
    ```bash
-   git clone git@github.com:cuongnguyen-dev/beta-claude-kit.git
-   cd beta-claude-kit
+   git clone git@github.com:cuongnguyen-dev/beta-kit.git
+   cd beta-kit
    git switch -c fix/self-check-skips-device
    ```
 
@@ -26,11 +26,11 @@ Use the list from "After each ticket" in [README.md](README.md):
 3. Try it on a real ticket. From the app repo, start Claude Code with your clone instead of the installed plugin:
 
    ```bash
-   claude --plugin-dir /path/to/beta-claude-kit
+   claude --plugin-dir /path/to/beta-kit
    ```
 
    After further edits, run `/reload-plugins` in that session.
-4. Check the plugin still loads: `claude plugin validate /path/to/beta-claude-kit`.
+4. Check the plugin still loads: `claude plugin validate /path/to/beta-kit`.
 5. Push the branch and open a pull request. Fill in the template.
 
 ## Rules for a skill change

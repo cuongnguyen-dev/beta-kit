@@ -1,4 +1,4 @@
-# beta-claude-kit
+# beta-kit
 
 Team Beta's workflow kit for Claude Code: four skills that take an Android ticket from Jira to a pull request description.
 
@@ -14,8 +14,8 @@ Typing `/ticket` is enough for Claude Code to suggest the full name.
 ## Install the plugin (once per machine)
 
 ```bash
-claude plugin marketplace add cuongnguyen-dev/beta-claude-kit
-claude plugin install beta-kit@beta-claude-kit
+claude plugin marketplace add cuongnguyen-dev/beta-kit
+claude plugin install beta-kit@beta-kit
 ```
 
 Restart Claude Code. Typing `/` should list `beta-kit:ticket`, `implement`, `self-check` and `pr`.
@@ -54,11 +54,11 @@ Before clearing the session, ask Claude to list what went wrong or had to be red
 ## Update
 
 ```bash
-claude plugin marketplace update beta-claude-kit
-claude plugin update beta-kit@beta-claude-kit
+claude plugin marketplace update beta-kit
+claude plugin update beta-kit@beta-kit
 ```
 
-Or turn on auto-update: `/plugin` → Marketplaces → beta-claude-kit. Every commit on `master` is a new version.
+Or turn on auto-update: `/plugin` → Marketplaces → beta-kit. Every commit on `master` is a new version.
 
 ## Improve the kit
 

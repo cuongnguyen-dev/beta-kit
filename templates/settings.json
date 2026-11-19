@@ -1,14 +1,14 @@
 {
   "extraKnownMarketplaces": {
-    "beta-claude-kit": {
+    "beta-kit": {
       "source": {
         "source": "github",
-        "repo": "cuongnguyen-dev/beta-claude-kit"
+        "repo": "cuongnguyen-dev/beta-kit"
       }
     }
   },
   "enabledPlugins": {
-    "beta-kit@beta-claude-kit": true
+    "beta-kit@beta-kit": true
   },
   "permissions": {
     "deny": [
