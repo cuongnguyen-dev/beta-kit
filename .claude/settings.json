@@ -1,0 +1,41 @@
+{
+  "permissions": {
+    "deny": [
+      "Read(.env)",
+      "Read(.env.*)",
+      "Read(*.jks)",
+      "Read(*.keystore)",
+      "Read(google-services.json)",
+      "Read(local.properties)",
+      "Read(fastlane/version.properties)",
+      "Read(fastlane/.env*)",
+      "Bash(git push *)",
+      "Bash(git reset --hard *)",
+      "Bash(git clean *)"
+    ],
+    "ask": [
+      "Bash(adb *uninstall *)",
+      "Bash(adb *pm clear *)",
+      "Bash(adb *pm grant *)",
+      "Bash(adb *pm revoke *)",
+      "Bash(adb *settings put *)"
+    ],
+    "allow": [
+      "Bash(adb devices *)",
+      "Bash(adb shell input *)",
+      "Bash(adb shell uiautomator dump *)",
+      "Bash(adb shell screencap *)",
+      "Bash(adb exec-out screencap *)",
+      "Bash(adb pull *)",
+      "Bash(adb logcat *)",
+      "Bash(adb shell am start *)",
+      "Bash(adb shell am broadcast *)",
+      "Bash(adb shell dumpsys *)",
+      "Bash(./gradlew assemble*)",
+      "Bash(./gradlew install*)",
+      "Bash(./gradlew test*)",
+      "Bash(./gradlew lint*)",
+      "Edit(/plans/screenshots/**)"
+    ]
+  }
+}
