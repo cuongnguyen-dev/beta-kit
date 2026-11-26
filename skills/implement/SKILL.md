@@ -40,7 +40,7 @@ No task id: pick the first unticked task and say which. No plan path: find the p
 3. Open every file you produce for delivery (images, exports) and look at it before reporting. After a script writes files, check `git status` for paths you did not expect.
 4. Mark temporary test code `TEMP <ticket>` and grep for it before every report.
 5. If a tool, resource or access fails, tell the Dev. Do not look for credentials or another way in.
-6. When the task's done condition is met, tick it in the plan. If the Dev asks you to tick a task whose done condition is not met, write what is unmet next to the tick.
+6. When the task's done condition is met, tick it in the plan. Every note you add to the plan (results, limits, notes for other teams) carries a label as in a documentation task, names the conditions you ran it under, and claims no more than you ran or read. If the Dev asks you to tick a task whose done condition is not met, write what is unmet next to the tick.
 
 ## Report, then stop
 
