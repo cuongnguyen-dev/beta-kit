@@ -55,4 +55,4 @@ Plan needs updating: <...>
 Found outside scope: <...>
 ```
 
-Do not commit, push or open a PR, and do not ask about them: the Dev handles git. Do not start the next task.
+Do not commit, push or open a PR, and do not ask about them: the Dev handles git. Do not start the next task; if no task in the plan is left unticked, end with: run `/beta-kit:self-check`.
