@@ -52,6 +52,6 @@ Save the report to `plans/<KEY>-self-check.md`, replacing the previous one (no t
 
 ## 4. When to stop
 
-An AC is "met" only when the behaviour itself was exercised in this run; seeing a label or a request go out is not enough. Mark an AC "needs someone else" only when neither you nor the Dev can verify it by any available means, including test configuration, and name who will do it and when. A task ticked with an unmet done condition counts as not met.
+An AC is "met" only when the behaviour itself was exercised in this run, or in an earlier run whose report names the commit and no file that behaviour depends on has changed since; seeing a label or a request go out is not enough. Mark an AC "needs someone else" only when neither you nor the Dev can verify it by any available means, including test configuration, and name who will do it and when. A task ticked with an unmet done condition counts as not met.
 
 The ticket is ready for the Dev to open a PR when "Must fix" is empty and every AC is "met" or "needs someone else". The "Minor" list does not have to reach zero. State this conclusion at the end of the report.
