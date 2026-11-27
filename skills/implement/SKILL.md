@@ -34,7 +34,7 @@ No task id: pick the first unticked task and say which. No plan path: find the p
    - Label something as run on device only for the exact steps you tapped and have a screenshot of. Seeing a button is not running the flow behind it.
    - If the device disagrees with the code you read, find out why (test data, config, account state) before changing anything, and state only what holds under the conditions you ran.
    - For time-dependent scenarios (alarms, notifications, token expiry), simulate with adb (send the intent or broadcast, change the clock if the Dev allows) before proposing to wait or skip.
-   - Ask the Dev before uninstalling the app, clearing its data, granting or revoking permissions, or changing system settings on a real device. A yes covers that one action only. Restore settings afterwards.
+   - Ask the Dev before uninstalling the app, clearing its data, granting or revoking permissions, or changing system settings on a real device. A yes covers that one action only, unless the Dev gives a standing answer for one dialog for the rest of the ticket (for example "notifications: Don't allow"); record it in the plan. Restore settings afterwards.
    - Do not type passwords, sign in, or pay: ask the Dev to do that step, then continue.
    - Do not open the notification shade or capture other apps. If you capture personal content, delete the image and tell the Dev.
 3. Open every file you produce for delivery (images, exports) and look at it before reporting. After a script writes files, check `git status` for paths you did not expect.
